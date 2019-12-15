@@ -1,0 +1,233 @@
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #1E1E23;
+  opacity:1;
+  font-family: 'work sans', sans serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  transition: 200ms;
+}
+a:hover {
+  opacity:0.5;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+.container {
+  margin-top: 50px;
+  Display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* rama telefonu */
+.phone {
+  background-color: #36383F;
+  border-radius: 40px;
+  width: 300px;
+  height: 650px;
+  Display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 30px 50px 100px #85888C;
+}
+.content {
+  border: 1px solid #36383F;
+  border-radius: 20px;
+  width: 94%;
+  height: 91%;
+  background-color: #F5F6FA;
+  overflow: hidden;
+}
+nav {
+  background-color: #1E1E23;
+  height: 65px;
+}
+
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuToggle span
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383F;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 225px;
+  height: 400px;
+  box-shadow: 0 0 10px #85888C;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* Wyszukiwarka */
+ .search {
+	 position: absolute;
+   padding: 10px;
+}
+ .search input {
+	 width: 265px;
+	 border: 1px solid #ccc;
+	 padding: 8px;
+	 font-size: 15px;
+	 transition: width 0.2s;
+	 -webkit-appearance: none;
+}
+ .fix-search .search {
+	 position: fixed;
+	 top: 10px;
+}
+ .fix-search .search input {
+	 width: 250px;
+}
+ .top {
+	 height: 175px;
+	 padding-top: 60px;
+}
+ .hero {
+	 width: 200px;
+	 height: 100px;
+	 background: #ccc;
+	 margin: 0 auto;
+
+}
+/* bloki contentu */
+ .main {
+	 padding: 0 10px;
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: space-between;
+}
+ .main .device {
+	 width: 125px;
+	 height: 70px;
+	 background: #ccc;
+	 margin: 0 0 20px 0;
+}
+
+.pSwitch{
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+
+.b0 {
+  background-image: url(img/b0.png);
+}
+
+.logo {
+  background-image: url(img/home.png);
+}
+.lodowka {
+  background-image: url(img/lodowka.png);
+}
+.router {
+  background-image: url(img/router.png);
+}
+.lampa {
+  background-image: url(img/lampa.png);
+}
+.zegarek {
+  background-image: url(img/zegarek.png);
+}
+.lustro {
+  background-image: url(img/lustro.png);
+}
+.odswiezacz {
+  background-image: url(img/odswiezacz.png);
+}
+.toaleta {
+  background-image: url(img/toaleta.png);
+}
+.kamera {
+  background-image: url(img/kamera.png);
+}
+
+.kamera2 {
+  background-image: url(img/kamera2.png);
+}
